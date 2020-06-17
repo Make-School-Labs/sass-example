@@ -5,6 +5,38 @@
 @import "variables";
 @import "headings";
 @import "card";
+@import "mixins";
+
+@mixin makeBox($h, $w) {
+  box-sizing: border-box;
+  border: 1px solid; 
+  border-radius: 1rem;
+  padding: 1rem;
+  width: $w;
+  height: $h;
+}
+
+.box-red {
+  @include makeBox(100px, 300px);
+  color: red;
+}
+
+.box-blue {
+  @include makeBox(130px, 200px);
+  color: blue;
+}
+
+@mixin rotateKeyFrames($name, $start, $end) {
+  @keyframes #{$name} {
+    0% { transform: rotate($start) }
+    100% { transform: rotate($end) }
+  }
+}
+
+@for $i from 1 through 5 {
+  $angle: ($i - 3) * 45deg;
+  @include rotateKeyFrames(rotate-#{$i}, 0deg, $angle);
+}
 
 // Global styles 
 

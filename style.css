@@ -60,6 +60,95 @@ header h1, header h2, header h3, header h4, header h5, header h6 {
   margin: 1rem;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2em;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.5em;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.founder-portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.box-red {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 300px;
+  height: 100px;
+  color: red;
+}
+
+.box-blue {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 200px;
+  height: 130px;
+  color: blue;
+}
+
+@keyframes rotate-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes rotate-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes rotate-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes rotate-5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
 body {
   background-color: #eee;
   color: #333;
